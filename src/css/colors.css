@@ -1,0 +1,7 @@
+:root {  /* Define variables in the :root pseudo-class for global scope */
+    --primary-color: #EBE8DC; /* A blue color */
+    --secondary-color: #C7C2B8; /* A gray color */
+    --accent-color: #583132; /* A red color */
+    --extra-color: #191E41; /* A light gray background */
+    --accent2-color: #607B9B; /* Dark grey text */
+  }

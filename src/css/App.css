@@ -1,0 +1,17 @@
+
+
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+header{
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 90px;
+    padding: 20px;
+}
+
+header #logo{
+    height: 100%;
+}
