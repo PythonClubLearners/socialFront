@@ -1,7 +1,8 @@
 
 .horizontal-list,
 .vertical-list,
-.stretch{
+.stretch,
+.align-center{
     display: flex;
 }
 

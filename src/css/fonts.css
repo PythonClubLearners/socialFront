@@ -8,10 +8,27 @@
       font-style: normal;
   }
 
-body, h1, h2, h3, h4, h5, button, a{
+body, h1, h2, h3, h4, h5, button, a, label{
     font-family: "SeoulNamsan-CBL";
 }
 
-h3, button.primary, button.secondary{
+h3, button.primary, button.secondary, label{
     font-size: 16px;
+}
+
+h1{
+    font-size: 36px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+label{
+    color: var(--extra-color);
+}
+
+input[type="text"], input[type="password"]{
+    background-color: var(--accent2-color);
+    border: none;
+    border-radius: 30px;
+    padding: 6px 20px;
 }
