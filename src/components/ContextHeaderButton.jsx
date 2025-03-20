@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export function ContextHeaderButton(){
-    return <button className="secondary">ВОЙТИ</button>
+    return <Link to={"/auth/login"} className="secondary">ВОЙТИ</Link>
 }

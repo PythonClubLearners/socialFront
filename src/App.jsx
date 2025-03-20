@@ -24,22 +24,24 @@ export default function App() {
 
   return (
       <div className={"App vertical-list align-center"}>
-        <header className="horizontal-list stretch align-center">
-          <img id="logo" src={IconImage}/>
-          <ContextHeaderButton/>
-        </header>
+
         <Router>
-              <Routes>
-                <Route path="/" element={<NavigationalLayout children={<MainPage/>}/>}/>
-                <Route path="/auth/login" element={<LoginPage/>}/>
-                <Route path="/users/:id" element={<NavigationalLayout children={<ProfilePage/>}/>}/>
-                <Route path="/users/:id/friends" element={<NavigationalLayout children={<FriendsPage/>}/>}/>
-                <Route path="/friend-requests" element={<NavigationalLayout children={<FriendsRequestsPage/>}/>}/>
-                <Route path="/posts/new" element={<NavigationalLayout children={<CreatePostPage/>}/>}/>
-                <Route path="/posts/:id" element={<NavigationalLayout children={<PostPage/>}/>}/>
-                <Route path="*" element={<NotFound/>}/>
-              </Routes>
-            </Router>
+          <header className="horizontal-list stretch align-center">
+            <img id="logo" src={IconImage}/>
+            <ContextHeaderButton/>
+          </header>
+
+          <Routes>
+            <Route path="/" element={<NavigationalLayout children={<MainPage/>}/>}/>
+            <Route path="/auth/login" element={<LoginPage/>}/>
+            <Route path="/users/:id" element={<NavigationalLayout children={<ProfilePage/>}/>}/>
+            <Route path="/users/:id/friends" element={<NavigationalLayout children={<FriendsPage/>}/>}/>
+            <Route path="/friend-requests" element={<NavigationalLayout children={<FriendsRequestsPage/>}/>}/>
+            <Route path="/posts/new" element={<NavigationalLayout children={<CreatePostPage/>}/>}/>
+            <Route path="/posts/:id" element={<NavigationalLayout children={<PostPage/>}/>}/>
+            <Route path="*" element={<NotFound/>}/>
+          </Routes>
+        </Router>
       </div>
   )
 }
