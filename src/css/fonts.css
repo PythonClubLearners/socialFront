@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'SeoulNamsan-CBL';
+      src:  url('SeoulNamsan-CBL/SeoulNamsan-CBL.ttf.woff') format('woff'),
+      url('SeoulNamsan-CBL/SeoulNamsan-CBL.ttf.svg#SeoulNamsan-CBL') format('svg'),
+      url('SeoulNamsan-CBL/SeoulNamsan-CBL.ttf.eot'),
+      url('SeoulNamsan-CBL/SeoulNamsan-CBL.eot?#iefix') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
+  }
+
+body, h1, h2, h3, h4, h5, button, a{
+    font-family: "SeoulNamsan-CBL";
+}
+
+h3, button.secondary{
+    font-size: 16px;
+}

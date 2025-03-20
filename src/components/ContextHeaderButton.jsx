@@ -1,3 +1,3 @@
 export function ContextHeaderButton(){
-    return <button>ВОЙТИ</button>
+    return <button className="secondary">ВОЙТИ</button>
 }

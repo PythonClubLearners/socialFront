@@ -10,6 +10,7 @@ import { NotFound } from "./pages/NotFound"
 
 import './css/colors.css'
 import './css/fonts.css'
+import './css/buttons.css'
 import './css/App.css'
 
 import IconImage from './img/icon.svg'

@@ -1,0 +1,10 @@
+/* button.primary{
+
+} */
+
+button.secondary{
+    min-width: 228px;
+    min-height: 36px;
+    background: none;
+    border: none;
+}
