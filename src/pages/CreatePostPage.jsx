@@ -1,3 +1,7 @@
 export function CreatePostPage(){
-    return null;
+    return (
+        <div className="page post-create">
+            CREATE POST
+        </div>
+    );
 }

@@ -1,3 +1,7 @@
 export function ProfilePage() {
-    return null;
+    return (
+        <div className="page profile">
+            Profile
+        </div>
+    );
 }

@@ -1,3 +1,7 @@
 export function FriendsPage() {
-    return null;
+    return (
+        <div className="page friends">
+            Friends
+        </div>
+    );
 }

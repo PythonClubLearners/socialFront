@@ -1,3 +1,7 @@
 export function LoginPage() {
-    return null;
+    return (
+        <div className="page login">
+            Login
+        </div>
+    );
 }

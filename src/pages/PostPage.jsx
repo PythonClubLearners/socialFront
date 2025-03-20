@@ -1,3 +1,7 @@
 export function PostPage(){
-    return null;
+    return (
+        <div className="page post">
+            POST VIEW
+        </div>
+    );
 }

@@ -30,13 +30,13 @@ export default function App() {
         </header>
         <Router>
               <Routes>
-                <Route path="/" element={<NavigationalLayout><MainPage/></NavigationalLayout>}/>
+                <Route path="/" element={<NavigationalLayout children={<MainPage/>}/>}/>
                 <Route path="/auth/login" element={<LoginPage/>}/>
-                <Route path="/users/:id" element={<ProfilePage/>}/>
-                <Route path="/users/:id/friends" element={<FriendsPage/>}/>
-                <Route path="/friend-requests" element={<FriendsRequestsPage/>}/>
-                <Route path="/posts/new" element={<CreatePostPage/>}/>
-                <Route path="/posts/:id" element={<PostPage/>}/>
+                <Route path="/users/:id" element={<NavigationalLayout children={<ProfilePage/>}/>}/>
+                <Route path="/users/:id/friends" element={<NavigationalLayout children={<FriendsPage/>}/>}/>
+                <Route path="/friend-requests" element={<NavigationalLayout children={<FriendsRequestsPage/>}/>}/>
+                <Route path="/posts/new" element={<NavigationalLayout children={<CreatePostPage/>}/>}/>
+                <Route path="/posts/:id" element={<NavigationalLayout children={<PostPage/>}/>}/>
                 <Route path="*" element={<NotFound/>}/>
               </Routes>
             </Router>

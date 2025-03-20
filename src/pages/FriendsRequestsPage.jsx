@@ -1,3 +1,7 @@
 export function FriendsRequestsPage() {
-    return null;
+    return (
+        <div className="page friend-requests">
+            Friends request
+        </div>
+    );
 }
