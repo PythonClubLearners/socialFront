@@ -1,0 +1,27 @@
+
+.horizontal-list,
+.vertical-list
+.stretch{
+    display: flex;
+}
+
+
+.horizontal-list{
+    flex-direction: row;
+}
+
+.vertical-list{
+    flex-direction: column;
+
+}
+
+.stretch{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+

@@ -11,22 +11,26 @@ import { NotFound } from "./pages/NotFound"
 import './css/colors.css'
 import './css/fonts.css'
 import './css/buttons.css'
+import './css/containers.css'
+
 import './css/App.css'
+
 
 import IconImage from './img/icon.svg'
 import { ContextHeaderButton } from "./components/ContextHeaderButton"
+import { NavigationalLayout } from "./layouts/NavigationalLayout"
 
 export default function App() {
 
   return (
       <div className={"App"}>
-        <header>
+        <header className="horizontal-list stretch align-center">
           <img id="logo" src={IconImage}/>
           <ContextHeaderButton/>
         </header>
         <Router>
               <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route path="/" element={<NavigationalLayout><MainPage/></NavigationalLayout>}/>
                 <Route path="/auth/login" element={<LoginPage/>}/>
                 <Route path="/users/:id" element={<ProfilePage/>}/>
                 <Route path="/users/:id/friends" element={<FriendsPage/>}/>
@@ -36,7 +40,6 @@ export default function App() {
                 <Route path="*" element={<NotFound/>}/>
               </Routes>
             </Router>
-
       </div>
   )
 }
