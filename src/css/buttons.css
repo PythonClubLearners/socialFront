@@ -1,10 +1,29 @@
-/* button.primary{
+button.primary, a.primary{
+    min-width: 148px;
+    min-height: 36px;
+    background-color: var(--accent2-color);
+    border: none;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--extra-color);
+    border-radius: 20px;
+}
+button.primary:hover, a.primary:hover{
+    background-color: var(--extra-color);
+    color: var(--primary-color);
+}
 
-} */
-
-button.secondary{
-    min-width: 228px;
+button.secondary, a.secondary{
+    min-width: 148px;
     min-height: 36px;
     background: none;
     border: none;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--extra-color);
+}
+button.secondary:hover, a.secondary:hover{
+    text-decoration: underline;
 }

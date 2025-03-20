@@ -1,6 +1,6 @@
 
 .horizontal-list,
-.vertical-list
+.vertical-list,
 .stretch{
     display: flex;
 }
@@ -23,5 +23,15 @@
     align-items: center;
 }
 
+.App{
+    gap: 20px
+}
+
+
+.page{
+    width: 792px;
+    background-color: var(--secondary-color);
+    padding: 73px 20px;
+}
 
 

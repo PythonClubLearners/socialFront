@@ -23,7 +23,7 @@ import { NavigationalLayout } from "./layouts/NavigationalLayout"
 export default function App() {
 
   return (
-      <div className={"App"}>
+      <div className={"App vertical-list align-center"}>
         <header className="horizontal-list stretch align-center">
           <img id="logo" src={IconImage}/>
           <ContextHeaderButton/>

@@ -12,6 +12,6 @@ body, h1, h2, h3, h4, h5, button, a{
     font-family: "SeoulNamsan-CBL";
 }
 
-h3, button.secondary{
+h3, button.primary, button.secondary{
     font-size: 16px;
 }

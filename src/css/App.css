@@ -6,10 +6,10 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 95%;
     background-color: var(--secondary-color);
     height: 90px;
-    padding: 20px;
+    padding: 20px 4%;
 }
 
 header #logo{
