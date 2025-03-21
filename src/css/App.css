@@ -5,13 +5,18 @@ body{
     background-color: var(--primary-color);
 }
 
-header{
-    width: 95%;
-    background-color: var(--secondary-color);
-    height: 90px;
-    padding: 20px 4%;
+.App{
+    width: max-content;
+    min-width: 100vw;
 }
 
-header #logo{
+header{
+    min-width: 94%;
+    background-color: var(--secondary-color);
+    height: 90px;
+    padding: 20px 3%;
+}
+
+header #logo, header #logo>img{
     height: 100%;
 }

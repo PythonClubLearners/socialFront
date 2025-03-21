@@ -1,0 +1,6 @@
+.form-input{
+    gap: 3px;
+}
+.form-input>label{
+    margin-left: 20px;
+}

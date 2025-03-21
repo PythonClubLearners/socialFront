@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router"
 import { MainPage } from "./pages/MainPage"
 import { LoginPage } from "./pages/LoginPage"
 import { ProfilePage } from "./pages/ProfilePage"
@@ -27,7 +27,9 @@ export default function App() {
 
         <Router>
           <header className="horizontal-list stretch align-center">
-            <img id="logo" src={IconImage}/>
+            <Link to="/" id="logo" >
+              <img src={IconImage}/>
+            </Link>
             <ContextHeaderButton/>
           </header>
 
