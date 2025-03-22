@@ -14,3 +14,17 @@ export function useAllPosts(){
     )
     return posts;
 }
+
+export function useUserPosts(userId){
+    const [posts, setPosts] = useState(undefined);
+    useEffect(
+        ()=>{
+            if (posts === undefined){
+                setPosts(
+                    mock_posts
+                )
+            }
+        }
+    )
+    return posts;
+}

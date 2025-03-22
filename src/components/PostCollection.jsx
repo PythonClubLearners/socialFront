@@ -4,7 +4,7 @@ import './css/PostCollection.css'
 export function PostCollection({posts, openButton}) {
 
     if (posts === undefined){
-        return <h1>Идет загрузка...</h1>
+        return <h1>Идет загрузка постов...</h1>
     }
 
     return (

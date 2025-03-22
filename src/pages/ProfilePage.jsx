@@ -4,8 +4,13 @@ import { Link } from 'react-router';
 
 import './css/ProfilePage.css'
 import { MultiLineText } from '../components/MultiLineText';
+import { useUserPosts } from '../api/dataHooks';
 
 export function ProfilePage() {
+
+
+    const posts = useUserPosts(1);
+
 
     const tempText = "Не следует, однако забывать, что укрепление и развитие структуры  обеспечивает широкому кругу (специалистов) участие в формировании  позиций, занимаемых участниками в отношении поставленных задач.        Разнообразный и богатый опыт сложившаяся структура организации  способствует подготовки и реализации систем массового участия.        С другой стороны дальнейшее развитие различных форм деятельности  играет важную роль в формировании форм развития.        Таким образом начало повседневной работы по формированию позиции  \nпозволяет оценить значение дальнейших направлений развития."
 
@@ -27,7 +32,7 @@ export function ProfilePage() {
                     </span>
                 </div>
             </div>
-            <PostCollection/>
+            <PostCollection posts={posts} openButton={true}/>
         </div>
     );
 }
