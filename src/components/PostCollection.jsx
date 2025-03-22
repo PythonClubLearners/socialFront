@@ -1,12 +1,22 @@
 import { PostHeader } from "./PostHeader";
+import { Link } from "react-router";
+import './css/PostCollection.css'
 
 export function PostCollection() {
     return (
         <div className="post-collection">
-            <PostHeader/>
-            <PostHeader/>
-            <PostHeader/>
-            <PostHeader/>
+            <Link to="/posts/1">
+                <PostHeader/>
+            </Link>
+            <Link to="/posts/1">
+                <PostHeader/>
+            </Link>
+            <Link to="/posts/1">
+                <PostHeader/>
+            </Link>
+            <Link to="/posts/1">
+                <PostHeader/>
+            </Link>
         </div>
     );
 }

@@ -1,0 +1,22 @@
+.post-header{
+    gap: 14px;
+    border-bottom: 3px solid var(--accent-color);
+    border-top: 3px solid var(--accent-color);
+    padding: 15px 12px;
+    border-collapse: collapse;
+}
+
+.post-header .username{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+.post-header .username h3{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.post-header .post-label{
+    color: var(--extra-color);
+}
