@@ -6,14 +6,14 @@ export function PostHeader() {
     return (
         <div className="post-header horizontal-list align-center">
 
-            <Link to="users/1/">
-                <img className="avatar" src={UserDefaultImage}/>
+            <Link to="/users/1">
+                <img className="avatar rounded" src={UserDefaultImage}/>
             </Link>
 
             <div className="horizontal-list stretch xfill">
 
                 <div className="vertical-list">
-                    <Link to="users/1/" className="username"><h3>@username</h3></Link>
+                    <Link to="/users/1" className="username"><h3>@username</h3></Link>
                     <h1 className="post-label">
                         POST LABEL
                     </h1>

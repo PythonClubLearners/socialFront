@@ -21,6 +21,6 @@ header #logo, header #logo>img{
     height: 100%;
 }
 
-.avatar{
+.avatar.rounded{
     border-radius: 30%;
 }
