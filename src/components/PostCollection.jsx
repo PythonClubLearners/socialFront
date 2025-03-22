@@ -1,16 +1,19 @@
 import { PostHeader } from "./PostHeader";
-import { Link } from "react-router";
 import './css/PostCollection.css'
 
-export function PostCollection() {
+export function PostCollection({posts, openButton}) {
+
+    if (posts === undefined){
+        return <h1>Идет загрузка...</h1>
+    }
+
     return (
         <div className="post-collection">
-            <PostHeader openButton={true}/>
-            <PostHeader openButton={true}/>
-            <PostHeader openButton={true}/>
-            <PostHeader openButton={true}/>
-            <PostHeader openButton={true}/>
-
+            {
+                posts.map(
+                    (post)=> (<PostHeader key={post.id} post={post} openButton={openButton}/>)
+                )
+            }
         </div>
     );
 }
