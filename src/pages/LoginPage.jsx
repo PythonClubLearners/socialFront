@@ -10,7 +10,7 @@ export function LoginPage() {
     }
 
     return (
-        <div className="page login">
+        <div className="page login vertical-list align-center">
             <form className="vertical-list align-center" onSubmit={loginHandler}>
                 <h1>
                     Готовы войти?

@@ -24,8 +24,16 @@
     width: 100%;
 }
 
+.xminimal{
+    width: min-content;
+}
+
 .align-center{
     align-items: center;
+}
+
+.start-right{
+    margin-left: auto;
 }
 
 .App{

@@ -44,7 +44,7 @@ label{
     color: var(--extra-color);
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], textarea{
     background-color: var(--accent2-color);
     border: none;
     border-radius: 30px;

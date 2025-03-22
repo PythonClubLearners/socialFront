@@ -1,3 +1,4 @@
 .page.login form{
     gap: 15px;
+    width: min-content;
 }

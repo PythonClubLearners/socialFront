@@ -1,12 +1,27 @@
 import './css/FormInput.css'
 
-export function FormInput({placeholder, type, htmlName}){
+export function FormInput({placeholder, type, htmlName, className}){
+    
+    const classNames = typeof className === "string"?className.split(" "):[]
+
+    let inputComponent;
+
+    switch (type) {
+        case "textarea":
+            inputComponent=<textarea id={htmlName} placeholder={placeholder}/>
+            break;
+    
+        default:
+            inputComponent=<input id={htmlName} type={type} placeholder={placeholder}/>
+            break;
+    }
+    
     return (
-        <div className={["form-input", type, htmlName, "vertical-list"].join(" ")}>
+        <div className={["form-input", type, htmlName, "vertical-list", "xfill", ...classNames].join(" ")}>
             <label htmlFor={htmlName}>
                 {placeholder}
             </label>
-            <input id={htmlName} type={type} placeholder={placeholder}/>
+            {inputComponent}
         </div>
     );
 }
