@@ -23,6 +23,7 @@ input[type="text"], input[type="password"]{
 
 h3, button.primary, button.secondary, label{
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 h1{

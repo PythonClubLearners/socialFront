@@ -10,11 +10,12 @@ export function LoginPage() {
     }
 
     return (
-        <div className="page login vertical-list align-center">
-            <form className="vertical-list" onSubmit={loginHandler}>
+        <div className="page login">
+            <form className="vertical-list align-center" onSubmit={loginHandler}>
                 <h1>
                     Готовы войти?
                 </h1>
+                <br/>
                 <FormInput
                     htmlName={"login"}
                     placeholder={"Логин"}
@@ -25,7 +26,8 @@ export function LoginPage() {
                     placeholder={"Пароль"}
                     type={"password"}
                 />
-                <button type="submit" className={"primary"}>ВОЙТИ</button>
+                <br/>
+                <button type="submit" className={"primary"}>Вход</button>
             </form>
         </div>
     );
