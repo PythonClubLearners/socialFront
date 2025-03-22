@@ -9,7 +9,7 @@ export function UserCollection({acceptButton}){
         <div className='user-list vertical-list xfill'>
             {
                 users.map(
-                    (user)=><UserLink acceptButton={acceptButton}/>
+                    (user)=><UserLink key={user} userId={user} acceptButton={acceptButton}/>
                 )
             }
         </div>

@@ -19,11 +19,13 @@ import './css/App.css'
 import IconImage from './img/icon.svg'
 import { ContextHeaderButton } from "./components/ContextHeaderButton"
 import { NavigationalLayout } from "./layouts/NavigationalLayout"
+import { UserContextProvider } from "./api/dataHooks"
 
 export default function App() {
   
 
   return (
+    <UserContextProvider>
       <div className={"App vertical-list align-center"}>
 
         <Router>
@@ -46,5 +48,6 @@ export default function App() {
           </Routes>
         </Router>
       </div>
+    </UserContextProvider>
   )
 }

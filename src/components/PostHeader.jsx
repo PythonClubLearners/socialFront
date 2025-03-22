@@ -23,7 +23,7 @@ export function PostHeader({post, openButton}) {
                     <span>
                         19 января 2047г
                     </span>
-                    {openButton && <Link to={`/posts/{post.id}/`} className="primary">Открыть</Link>}
+                    {openButton && <Link to={`/posts/${post.id}/`} className="primary">Открыть</Link>}
                 </div>
 
 
