@@ -1,0 +1,22 @@
+.user-link{
+    gap: 14px;
+    border-bottom: 3px solid var(--accent-color);
+    border-top: 3px solid var(--accent-color);
+    padding: 15px 12px;
+    border-collapse: collapse;
+}
+
+.user-link .username{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+.user-link .username h3{
+    text-transform: lowercase;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.user-link .firstLastName{
+    color: var(--extra-color);
+}

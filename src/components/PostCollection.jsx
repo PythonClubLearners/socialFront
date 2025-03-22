@@ -5,18 +5,12 @@ import './css/PostCollection.css'
 export function PostCollection() {
     return (
         <div className="post-collection">
-            <Link to="/posts/1">
-                <PostHeader/>
-            </Link>
-            <Link to="/posts/1">
-                <PostHeader/>
-            </Link>
-            <Link to="/posts/1">
-                <PostHeader/>
-            </Link>
-            <Link to="/posts/1">
-                <PostHeader/>
-            </Link>
+            <PostHeader openButton={true}/>
+            <PostHeader openButton={true}/>
+            <PostHeader openButton={true}/>
+            <PostHeader openButton={true}/>
+            <PostHeader openButton={true}/>
+
         </div>
     );
 }
