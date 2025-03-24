@@ -69,7 +69,7 @@ export const mock_post_2 = {
 
     description: "Что то тут написано",
 
-    author: 3,
+    author: 4,
 
 }
 
