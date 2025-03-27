@@ -11,7 +11,7 @@ const UserContext = createContext(
 
 export function UserContextProvider({children}){
     const [currentUser, setCurrentUser] = useState(undefined);
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = useState({});
 
     const contextData = {
         currentUser,
@@ -32,21 +32,16 @@ export function UserContextProvider({children}){
 export function useUserData(userId) {
     const userContext = useContext(UserContext);
 
-    const user = userContext.users.find(
-        (v)=>(v.id===userId)
-    )
-
+    const user = userContext.users[userId];
 
     function setUser(userData) {
-
-        if (user === undefined && userData){
+        if (!user && userData){
             userContext.setUsers(
-                [...userContext.users, userData]
+                {...userContext.users, userId: userData}
             )
-            userContext.users.push(userData)
+            userContext.users[userId] = userData;
         }
     }
-
 
     useEffect(
         ()=>{
