@@ -1,0 +1,50 @@
+
+.horizontal-list,
+.vertical-list,
+.stretch,
+.align-center{
+    display: flex;
+}
+
+
+.horizontal-list{
+    flex-direction: row;
+}
+
+.vertical-list{
+    flex-direction: column;
+
+}
+
+.stretch{
+    justify-content: space-between;
+}
+
+.xfill{
+    width: 100%;
+}
+
+.xminimal{
+    width: min-content;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.start-right{
+    margin-left: auto;
+}
+
+.App{
+    gap: 20px
+}
+
+
+.page{
+    width: 792px;
+    background-color: var(--secondary-color);
+    padding: 73px 20px;
+}
+
+

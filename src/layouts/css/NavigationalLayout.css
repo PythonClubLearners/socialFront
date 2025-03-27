@@ -1,0 +1,9 @@
+.navigational {
+    gap: 50px;
+}
+
+.navigational > .navigation{
+    background-color: var(--secondary-color);
+    padding: 12px 33px;
+    height: fit-content;
+}

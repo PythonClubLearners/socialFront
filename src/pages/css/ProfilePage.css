@@ -1,0 +1,13 @@
+.page.profile .header .avatar{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.page.profile .header .about{
+    width: 620px;
+}
+
+.page.profile .header .description{
+    color: var(--accent-color)
+}

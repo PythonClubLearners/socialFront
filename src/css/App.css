@@ -1,0 +1,26 @@
+
+
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+.App{
+    width: max-content;
+    min-width: 100vw;
+}
+
+header{
+    min-width: 94%;
+    background-color: var(--secondary-color);
+    height: 90px;
+    padding: 20px 3%;
+}
+
+header #logo, header #logo>img{
+    height: 100%;
+}
+
+.avatar.rounded{
+    border-radius: 30%;
+}
