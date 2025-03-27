@@ -8,11 +8,11 @@ export function FormInput({placeholder, type, htmlName, className}){
 
     switch (type) {
         case "textarea":
-            inputComponent=<textarea id={htmlName} placeholder={placeholder}/>
+            inputComponent=<textarea id={htmlName} placeholder={placeholder} name={htmlName}/>
             break;
     
         default:
-            inputComponent=<input id={htmlName} type={type} placeholder={placeholder}/>
+            inputComponent=<input id={htmlName} type={type} placeholder={placeholder} name={htmlName}/>
             break;
     }
     

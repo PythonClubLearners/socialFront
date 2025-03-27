@@ -21,6 +21,17 @@ export function UserContextProvider({children}){
     }
 
 
+    useEffect(
+        ()=>{
+            if (currentUser === undefined){
+                setCurrentUser(
+                    localStorage.getItem("isAuthDebug")?mock_user_1:null
+                )
+            }
+        }, [currentUser]
+    )
+
+
     return (
         <UserContext.Provider value={contextData}>
             {children}
@@ -60,16 +71,6 @@ export function useUserData(userId) {
 
 export function useCurrentUser() {
     const userContext = useContext(UserContext);
-
-    useEffect(
-        ()=>{
-            if (userContext.currentUser === undefined){
-                useContext.setCurrentUser(
-                    null//mock_user_1
-                )
-            }
-        }, [userContext.currentUser]
-    )
 
     return userContext.currentUser;
 }

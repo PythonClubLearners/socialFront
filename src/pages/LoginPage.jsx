@@ -1,11 +1,18 @@
 
 import { FormInput } from '../components/FormInput';
 import './css/LoginPage.css'
+import {login} from '../api/endpoints'
 
 export function LoginPage() {
 
     function loginHandler(event) {
-        console.log(event);
+        // console.log(event);
+        
+        const formData = new FormData(event.target)
+
+        // console.log(formData.get("username"));
+        login(formData);
+
         event.preventDefault();
     }
 
@@ -17,7 +24,7 @@ export function LoginPage() {
                 </h1>
                 <br/>
                 <FormInput
-                    htmlName={"login"}
+                    htmlName={"username"}
                     placeholder={"Логин"}
                     type={"text"}
                 />
