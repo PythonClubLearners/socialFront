@@ -106,3 +106,19 @@ export function useUserPosts(userId){
     )
     return posts;
 }
+
+export function usePost(postId){
+    const [post, setPost] = useState(undefined);
+
+    useEffect(
+        () =>{
+            if (post===undefined){
+                setPost(mock_posts.find(
+                    (p)=>p.id===postId
+                ) || null)
+            }
+        }, [post]
+    );
+
+    return post;
+}
