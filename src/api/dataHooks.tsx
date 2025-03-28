@@ -1,16 +1,26 @@
 import { useContext, useEffect, useState } from "react";
 import { mock_all_users, mock_posts } from "./mock_data";
 import {UserContext} from './UserContext'
+import { Post, User } from "./types";
 
-export function useUserData(userId) {
+export function useUserData(userId:number) {
     const userContext = useContext(UserContext);
 
-    const user = userContext.users[userId];
+    // if (userContext.users === undefined || !userContext.setUsers){
+    //     return undefined;
+    // }
 
-    function setUser(userData) {
+    const user = userContext.users? userContext.users[userId]: undefined;
+
+    function setUser(userData?: User|null) {
+
+        if (!userContext.setUsers || !userContext.users){
+            return;
+        }
+
         if (!user && userData){
             userContext.setUsers(
-                {...userContext.users, userId: userData}
+                {...userContext.users, [userId]: userData}
             )
             userContext.users[userId] = userData;
         }
@@ -38,7 +48,7 @@ export function useCurrentUser() {
 }
 
 export function useAllPosts(){
-    const [posts, setPosts] = useState(undefined);
+    const [posts, setPosts] = useState<Post[]>([]);
     useEffect(
         ()=>{
             if (posts === undefined){
@@ -51,8 +61,8 @@ export function useAllPosts(){
     return posts;
 }
 
-export function useUserPosts(userId){
-    const [posts, setPosts] = useState(undefined);
+export function useUserPosts(userId:number){
+    const [posts, setPosts] = useState<Post[]>([]);
     useEffect(
         ()=>{
             if (posts === undefined){
@@ -65,8 +75,8 @@ export function useUserPosts(userId){
     return posts;
 }
 
-export function usePost(postId){
-    const [post, setPost] = useState(undefined);
+export function usePost(postId:number){
+    const [post, setPost] = useState<Post[]>([]);
 
     useEffect(
         () =>{

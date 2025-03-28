@@ -1,4 +1,4 @@
-import { User } from "./types"
+import { Post, User } from "./types"
 
 export const mock_user_1: User = {
 
@@ -42,11 +42,9 @@ export const mock_all_users = [
 
   
 
-export const mock_post_1 = {
+export const mock_post_1: Post = {
 
     id: 1,
-
-    image: null,
 
     title: "Пост первый",
 
@@ -59,7 +57,7 @@ export const mock_post_1 = {
   
   
 
-export const mock_post_2 = {
+export const mock_post_2: Post = {
 
     id: 2,
 

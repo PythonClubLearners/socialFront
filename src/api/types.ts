@@ -9,3 +9,10 @@ export interface User extends UniqueObject{
     description: string;
     avatar?: string;
 }
+
+export interface Post extends UniqueObject{
+    image?: string;
+    title: string;
+    description: string;
+    author: number;
+}
