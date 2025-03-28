@@ -76,7 +76,7 @@ export function useUserPosts(userId:number){
 }
 
 export function usePost(postId:number){
-    const [post, setPost] = useState<Post[]>([]);
+    const [post, setPost] = useState<Post|null|undefined>(undefined);
 
     useEffect(
         () =>{
