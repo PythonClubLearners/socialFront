@@ -1,44 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { mock_all_users, mock_posts, mock_user_1 } from "./mock_data";
-
-const UserContext = createContext(
-    {
-    currentUser:undefined, 
-    users:undefined,
-    setCurrentUser:undefined,
-    setUsers:undefined,
-})
-
-export function UserContextProvider({children}){
-    const [currentUser, setCurrentUser] = useState(undefined);
-    const [users, setUsers] = useState({});
-
-    const contextData = {
-        currentUser,
-        setCurrentUser,
-        users,
-        setUsers
-    }
-
-
-    useEffect(
-        ()=>{
-            if (currentUser === undefined){
-                setCurrentUser(
-                    localStorage.getItem("isAuthDebug")?mock_user_1:null
-                )
-            }
-        }, [currentUser]
-    )
-
-
-    return (
-        <UserContext.Provider value={contextData}>
-            {children}
-        </UserContext.Provider>
-    );
-
-}
+import { useContext, useEffect, useState } from "react";
+import { mock_all_users, mock_posts } from "./mock_data";
+import {UserContext} from './UserContext'
 
 export function useUserData(userId) {
     const userContext = useContext(UserContext);

@@ -1,4 +1,6 @@
-export const mock_user_1 = {
+import { User } from "./types"
+
+export const mock_user_1: User = {
 
     id: 3,
 
@@ -10,12 +12,10 @@ export const mock_user_1 = {
 
     description: "Это пример страницы пользователя",
 
-    avatar: null,
-
 }
 
 
-export const mock_user_2 = {
+export const mock_user_2: User = {
 
     id: 4,
 
@@ -27,7 +27,7 @@ export const mock_user_2 = {
 
     description: "Это пример страницы пользователя",
 
-    avatar: null,
+    avatar: "defaultImage",
 
 }
 
