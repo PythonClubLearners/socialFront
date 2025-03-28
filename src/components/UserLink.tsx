@@ -3,7 +3,7 @@ import UserDefaultImage from '../img/user_default.png'
 import './css/UserLink.css'
 import { useUserData } from "../api/dataHooks";
 
-export function UserLink({userId, acceptButton}){
+export function UserLink({userId, acceptButton}:{userId:number, acceptButton?:boolean}){
 
     const user = useUserData(userId);
     

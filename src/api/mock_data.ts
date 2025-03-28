@@ -1,4 +1,6 @@
-export const mock_user_1 = {
+import { Post, User } from "./types"
+
+export const mock_user_1: User = {
 
     id: 3,
 
@@ -10,12 +12,10 @@ export const mock_user_1 = {
 
     description: "Это пример страницы пользователя",
 
-    avatar: null,
-
 }
 
 
-export const mock_user_2 = {
+export const mock_user_2: User = {
 
     id: 4,
 
@@ -27,7 +27,7 @@ export const mock_user_2 = {
 
     description: "Это пример страницы пользователя",
 
-    avatar: null,
+    avatar: "defaultImage",
 
 }
 
@@ -42,11 +42,9 @@ export const mock_all_users = [
 
   
 
-export const mock_post_1 = {
+export const mock_post_1: Post = {
 
     id: 1,
-
-    image: null,
 
     title: "Пост первый",
 
@@ -59,7 +57,7 @@ export const mock_post_1 = {
   
   
 
-export const mock_post_2 = {
+export const mock_post_2: Post = {
 
     id: 2,
 

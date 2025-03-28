@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 export function CreatePostPage(){
 
-    function createPostHandler(event){
+    function createPostHandler(event: React.FormEvent){
         console.log(event);
         event.preventDefault();
     }

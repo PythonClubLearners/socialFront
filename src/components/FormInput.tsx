@@ -1,6 +1,13 @@
 import './css/FormInput.css'
 
-export function FormInput({placeholder, type, htmlName, className}){
+interface FormInputParameters{
+    placeholder:string;
+    type: string;
+    htmlName: string;
+    className?: string;
+}
+
+export function FormInput({placeholder, type, htmlName, className}: FormInputParameters){
     
     const classNames = typeof className === "string"?className.split(" "):[]
 

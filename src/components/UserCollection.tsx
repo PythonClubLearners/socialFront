@@ -1,8 +1,8 @@
 
 import {mock_friends_invite} from '../api/mock_data'
-import { UserLink } from '../components/UserLink'
+import { UserLink } from './UserLink'
 
-export function UserCollection({acceptButton}){
+export function UserCollection({acceptButton}:{acceptButton?:boolean}){
     const users = mock_friends_invite
 
     return (
