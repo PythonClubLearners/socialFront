@@ -5,12 +5,10 @@ import {login} from '../api/endpoints'
 
 export function LoginPage() {
 
-    function loginHandler(event) {
-        // console.log(event);
-        
-        const formData = new FormData(event.target)
+    function loginHandler(event: React.FormEvent) {
 
-        // console.log(formData.get("username"));
+        const formData = new FormData(event.target as HTMLFormElement)
+
         login(formData);
 
         event.preventDefault();

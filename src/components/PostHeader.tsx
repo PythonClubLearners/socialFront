@@ -2,8 +2,9 @@ import { Link } from "react-router";
 import UserDefaultImage from '../img/user_default.png';
 import './css/PostHeader.css';
 import {useUserData} from '../api/dataHooks';
+import { Post } from "../api/types";
 
-export function PostHeader({post, openButton}) {
+export function PostHeader({post, openButton}: {post:Post, openButton?:boolean}) {
 
     const author = useUserData(post.author);
 
