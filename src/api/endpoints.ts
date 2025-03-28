@@ -1,5 +1,5 @@
 
-export function login(formData) {
+export function login(formData: FormData) {
     localStorage.setItem("isAuthDebug", "true");
     
     document.location.href = "/";
