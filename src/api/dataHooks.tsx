@@ -48,7 +48,7 @@ export function useCurrentUser() {
 }
 
 export function useAllPosts(){
-    const [posts, setPosts] = useState<Post[]>([]);
+    const [posts, setPosts] = useState<Post[]|undefined>(undefined);
     useEffect(
         ()=>{
             if (posts === undefined){
@@ -62,7 +62,7 @@ export function useAllPosts(){
 }
 
 export function useUserPosts(userId:number){
-    const [posts, setPosts] = useState<Post[]>([]);
+    const [posts, setPosts] = useState<Post[]|undefined>(undefined);
     useEffect(
         ()=>{
             if (posts === undefined){
